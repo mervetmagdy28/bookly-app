@@ -1,4 +1,5 @@
 import 'package:bookly/core/functions/url_launcher.dart';
+import 'package:bookly/costants.dart';
 import 'package:bookly/features/home/data/models/book_model.dart';
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
@@ -27,8 +28,8 @@ class ButtonRow extends StatelessWidget {
               onPressed: ()async {
                 customLauncherUrl(context, bookModel.volumeInfo.previewLink!);
               },
-              backgroundColor: Color(0xffef8262),
-              borderRadius: BorderRadius.only(topRight: Radius.circular(12),bottomRight: Radius.circular(12)),
+              backgroundColor: kSecondColor,
+              borderRadius: const BorderRadius.only(topRight: Radius.circular(12),bottomRight: Radius.circular(12)),
               text: getText(bookModel),
               textColor: Colors.white,
               fontSize: 16,

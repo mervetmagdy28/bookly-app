@@ -8,6 +8,8 @@ import 'package:bookly/features/search/data/repo/search_repo.dart';
 import 'package:bookly/features/search/data/repo/search_repo_impl.dart';
 import 'package:bookly/features/search/presentatiom/view/search.dart';
 import 'package:bookly/features/search/presentatiom/view_models/search_cubit/search_cubit.dart';
+import 'package:bookly/features/sign_in/presentation/views/sign_in.dart';
+import 'package:bookly/features/sign_up/presentation/views/sign_up.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:go_router/go_router.dart';
@@ -19,6 +21,8 @@ abstract class AppRouter{
   static String homeView='/home';
   static String bookDetailsView='/book';
   static String searchView='/search';
+  static String signIn='/signIn';
+  static String signUp='/signUp';
   static final GoRouter router = GoRouter(
     routes: <GoRoute>[
       GoRoute(
@@ -48,6 +52,18 @@ abstract class AppRouter{
           return BlocProvider(
             create: (context)=>SearchCubit(SearchRepoImpl(apiService: getIt.get<ApiService>()))..fetchSearchBooks(bookType: state.extra as String),
               child: SearchView(bookName: state.extra as String,));
+        },
+      ),
+      GoRoute(
+        path: signIn,
+        builder: (BuildContext context, GoRouterState state) {
+          return SignIn();
+        },
+      ),
+      GoRoute(
+        path: signUp,
+        builder: (BuildContext context, GoRouterState state) {
+          return SignUp();
         },
       ),
     ],

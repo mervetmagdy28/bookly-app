@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 
 const Color kPrimaryColor=Color(0xff100B20);
 
+const Color kSecondColor=Color(0xffef8262);
+
 const Duration kPrimaryDuration=Duration(milliseconds: 300);
 
 const kGtSectraFine='GT Sectra Fine';
