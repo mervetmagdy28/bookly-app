@@ -4,13 +4,14 @@ A new Flutter project.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+User Registration and Login:
+Users should be able to create an account and log in to the app using their email address or other authentication methods.
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Search Functionality: The app should provide a search bar where users can search for books by title
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
+Book Details: The app should display details about each book, including plot summary, author biography, ratings, reviews, and awards. This information can be obtained using a book API.
+
+
+Reading List: Users should be able to add books to their Reading List, which is a list of books they want to read later. sers should also be able to remove books from the Reading List or mark them* as "Icon Card".
