@@ -18,3 +18,28 @@ Reading List: Users should be able to add books to their Reading List, which is 
 
 
 <img src='https://github.com/mervetmagdy28/bookly-app/blob/main/output/WhatsApp%20Image%202023-05-06%20at%2006.42.50%20(1).jpeg' alt='splash view'/>
+
+
+<img src='https://github.com/mervetmagdy28/bookly-app/blob/main/output/WhatsApp%20Image%202023-05-06%20at%2006.42.50.jpeg' alt='splash view'/>
+
+<img src='https://github.com/mervetmagdy28/bookly-app/blob/main/output/WhatsApp%20Image%202023-05-06%20at%2006.42.51.jpeg' alt='splash view'/>
+
+
+<img src='https://github.com/mervetmagdy28/bookly-app/blob/main/output/WhatsApp%20Image%202023-05-06%20at%2006.42.56.jpeg' alt='splash view'/>
+
+
+<img src='https://github.com/mervetmagdy28/bookly-app/blob/main/output/WhatsApp%20Image%202023-05-06%20at%2006.42.57.jpeg' alt='splash view'/>
+
+<img src='https://github.com/mervetmagdy28/bookly-app/blob/main/output/WhatsApp%20Image%202023-05-06%20at%2006.42.57%20(1).jpeg' alt='splash view'/>
+
+
+
+<img src='https://github.com/mervetmagdy28/bookly-app/blob/main/output/WhatsApp%20Image%202023-05-06%20at%2006.42.58%20(1).jpeg' alt='splash view'/>
+
+
+
+<img src='https://github.com/mervetmagdy28/bookly-app/blob/main/output/WhatsApp%20Image%202023-05-06%20at%2006.42.58.jpeg' alt='splash view'/>
+
+
+
+<img src='https://github.com/mervetmagdy28/bookly-app/blob/main/output/WhatsApp%20Image%202023-05-06%20at%2006.42.50%20(1).jpeg' alt='splash view'/>
