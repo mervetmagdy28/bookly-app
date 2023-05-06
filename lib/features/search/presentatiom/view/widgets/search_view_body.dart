@@ -2,7 +2,6 @@ import 'package:bookly/core/utils/styles.dart';
 import 'package:bookly/features/search/presentatiom/view_models/search_cubit/search_cubit.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_shimmer/flutter_shimmer.dart';
 import '../../../../../core/widgets/error_message.dart';
 import '../../../../home/presenation/views/widgets/best_seller_list_view_item.dart';
 import '../../../../home/presenation/views/widgets/shimmer_effect_container.dart';

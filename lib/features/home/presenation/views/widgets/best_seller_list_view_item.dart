@@ -1,5 +1,5 @@
 import 'package:bookly/core/utils/router.dart';
-import 'package:bookly/features/home/presenation/views/widgets/rating_row.dart';
+import 'package:bookly/features/home/presenation/views/widgets/rating_row_without_favorite.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
@@ -19,7 +19,7 @@ class ListViewItem extends StatelessWidget {
         GoRouter.of(context).push(AppRouter.bookDetailsView, extra: bookModel,);
       },
       child: SizedBox(
-        height: 120,
+        height: 150,
         child: Row(
           children:[
             CustomImageItem(imageUrl: bookModel.volumeInfo.imageLinks?.thumbnail??errImage),
@@ -47,7 +47,7 @@ class ListViewItem extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Text("Free", style: Styles.textStyle20.copyWith(fontWeight: FontWeight.bold),),
-                      RatingRow(rating: bookModel.volumeInfo.averageRating?.toInt()??0,countRating: bookModel.volumeInfo.ratingsCount??0),
+                      RatingRowWithoutFavorite(rating: bookModel.volumeInfo.averageRating?.toInt()??3,countRating: bookModel.volumeInfo.ratingsCount??100,),
                     ],)
                 ],
               ),

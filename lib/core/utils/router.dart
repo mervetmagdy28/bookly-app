@@ -4,17 +4,18 @@ import 'package:bookly/features/home/data/models/book_model.dart';
 import 'package:bookly/features/home/data/repos/home_repo_impl.dart';
 import 'package:bookly/features/home/presenation/view_models/similar_books_cubit/similar_books_cubit.dart';
 import 'package:bookly/features/home/presenation/views/book_detials_view.dart';
-import 'package:bookly/features/search/data/repo/search_repo.dart';
+import 'package:bookly/features/reading_list/presentation/view_models/reading_list_cubit/reading_list_cubit.dart';
+import 'package:bookly/features/reading_list/presentation/views/reading_list_view.dart';
 import 'package:bookly/features/search/data/repo/search_repo_impl.dart';
 import 'package:bookly/features/search/presentatiom/view/search.dart';
 import 'package:bookly/features/search/presentatiom/view_models/search_cubit/search_cubit.dart';
-import 'package:bookly/features/sign_in/presentation/views/sign_in.dart';
-import 'package:bookly/features/sign_up/presentation/views/sign_up.dart';
+import 'package:bookly/features/sign/presentation/views/sign_up.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:go_router/go_router.dart';
 
 import '../../features/home/presenation/views/home.dart';
+import '../../features/sign/presentation/views/sign_in.dart';
 import '../../features/splash/presenation/views/splash_view.dart';
 
 abstract class AppRouter{
@@ -23,6 +24,7 @@ abstract class AppRouter{
   static String searchView='/search';
   static String signIn='/signIn';
   static String signUp='/signUp';
+  static String readingList='/readingList';
   static final GoRouter router = GoRouter(
     routes: <GoRoute>[
       GoRoute(
@@ -57,13 +59,21 @@ abstract class AppRouter{
       GoRoute(
         path: signIn,
         builder: (BuildContext context, GoRouterState state) {
-          return SignIn();
+          return const SignIn();
         },
       ),
       GoRoute(
         path: signUp,
         builder: (BuildContext context, GoRouterState state) {
           return SignUp();
+        },
+      ),
+      GoRoute(
+        path: readingList,
+        builder: (BuildContext context, GoRouterState state) {
+          return BlocProvider(
+              create: (context)=>ReadingListCubit(),
+              child: ReadingListView());
         },
       ),
     ],
